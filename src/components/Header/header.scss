@@ -1,0 +1,48 @@
+.Header {
+  background-image: url("../../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28rem;
+
+  &_container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_title {
+    color: white;
+    margin: 3.5rem 0;
+  }
+  &_search {
+    position: relative;
+  }
+  &_input {
+    width: 50rem;
+    padding: 2rem 0;
+    padding-left: 1.5rem;
+    outline: none;
+    border-radius: 1rem;
+  }
+  &_arrow {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 1;
+    color: black;
+    background: black;
+    padding: 2.15rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+    border: none;
+
+    &:active {
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.73);
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.73);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.73);
+      transform: scale(0.9);
+    }
+  }
+}
